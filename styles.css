@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.header {
+    font-size: 80px;
+    text-align: center;
+    height: 100px;
+    
+}
+
+.game {
+    
+    padding-top:30px;
+    border: 8px solid white;
+    height: 40rem;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+.info {
+    margin-top: 30px;
+    color: rgb(173, 31, 255);
+    height: 70px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.guess-info {
+    display: flex;
+    height: 400px;
+}
+
+#lifes {
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    text-align: center;
+    height: 370px;
+    width: 400px;
+    white-space: wrap;
+}
+.guess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 370px;
+    width: 400px;
+}
+
+.number {
+    font-size: 100px;
+    height: 150px;
+    background-color: black;
+    border: 8px solid white;
+    width: 300px;
+    text-align: center;
+}
+
+#tip {
+    height: 370px;
+    width: 400px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    text-align: center;
+    
+}
+
+.button-container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.but {
+    background-color: black;
+    border: 8px solid rgb(255, 255, 255);
+    width: 250px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 25px;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .guess-info {
+        display: inline-block;
+        
+    }
+    #tip {
+        top: 170px;
+        position: absolute;
+        width: 100%;
+        margin: 0px;
+        font-size: 40px;
+    }
+    #lifes {
+        position: absolute;
+        width: 100%;
+        margin: 0px;
+        top: 100px;
+        font-size:40px;
+    }
+    .game {
+        margin: 2px;
+        height: 100vh
+    }
+    .header {
+        font-size: 65px;
+        height: 70px;
+    }
+
+    .guess {
+        top: 270px;
+        position: absolute;
+        width: 100%;
+        margin: 0;
+    }
+    .but {
+       
+        height: 100px;
+        font-size: 45px;
+    }
+
+    .button-container {
+        position: absolute;
+        width: 100%;
+        left: -3px;
+        bottom: 10px;
+    }
+    .number {
+        height: 100px;
+        width: 250px;
+        font-size: 45px;
+    }
+}

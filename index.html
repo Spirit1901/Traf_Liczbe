@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Traf_Liczbe_Karol_Bajtus</title>
+    <script>
+      // Receive messages from the main process
+      const { ipcRenderer } = require('electron');
+      ipcRenderer.on('message', (event, message) => {
+        console.log(message); // Output the message to the console
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Guessing Game!</div>
+      <div class="game">
+          <div class="info">Guess the number between 1 to 21</div>
+          <div class="guess-info">
+              <div id="lifes">
+              </div>
+              <div class="guess">
+                  <input class="number"type="text" placeholder="number">
+              </div>
+              <div id="tip">
+                  Your number is:
+              </div>
+          </div>
+          <div class="button-container">
+              <button type="submit" class="but" >Try your luck!</button>
+          </div>
+      </div>
+  </div>
+             
+
+          
+
+
+  
+  <script>
+    require('./script.js')
+  </script>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="script.js"></script>
+  </body>
+</html>
